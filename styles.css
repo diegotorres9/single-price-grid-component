@@ -6,7 +6,6 @@ body {
 }
 
 main {
-  width: 800px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr;
@@ -104,7 +103,6 @@ main {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
     grid-template-areas: "join" "subscribe" "us";
-    width: 300px;
   }
 
   #join-community {
