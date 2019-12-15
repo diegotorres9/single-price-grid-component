@@ -1,6 +1,16 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 main {
+  width: 800px;
   display: grid;
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "join join" "subscribe us";
   font-family: "Karla", sans-serif;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
   border-radius: 5px;
@@ -11,6 +21,7 @@ main {
   flex-direction: column;
   justify-content: center;
   padding: 20px 20px 10px 20px;
+  grid-area: join;
 }
 #join-community h1 {
   color: #2ab2af;
@@ -30,6 +41,7 @@ main {
 #subscription {
   background: #2ab2af;
   padding: 20px 20px 10px 20px;
+  grid-area: subscribe;
 }
 #subscription h3 {
   color: #fff;
@@ -65,6 +77,7 @@ main {
 #why-us {
   background: #3dd1cf;
   padding: 20px 20px 10px 20px;
+  grid-area: us;
 }
 #why-us h4 {
   font-weight: bold;

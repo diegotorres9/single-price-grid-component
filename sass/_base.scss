@@ -1,7 +1,18 @@
 @use 'variables';
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 main {
+    width: 800px;
     display: grid;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    "join join"
+    "subscribe us";
     font-family: variables.$karla;
     box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
     border-radius: 5px;
@@ -11,6 +22,7 @@ main {
     flex-direction: column;
     justify-content: center;
     padding: 20px 20px 10px 20px;
+    grid-area: join;
     h1 {
         color: variables.$cyan;
         // margin: 20px 0 10px 20px;
@@ -32,6 +44,7 @@ main {
 #subscription {
     background: variables.$cyan;
     padding: 20px 20px 10px 20px;
+    grid-area: subscribe;
     h3 {
         // margin: 20px 0 10px 20px;
         color: #fff;
@@ -68,6 +81,7 @@ main {
 #why-us {
     background: lighten(variables.$cyan, 10%);
     padding: 20px 20px 10px 20px;
+    grid-area: us;
     h4 {
         font-weight: bold;
         color: #fff;
