@@ -1,0 +1,87 @@
+main {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  font-family: "Karla", sans-serif;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  border-radius: 5px;
+}
+
+#join-community {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px 20px 10px 20px;
+}
+#join-community h1 {
+  color: #2ab2af;
+  padding: 0;
+}
+#join-community h2 {
+  color: #c0df34;
+  font-size: 16px;
+  padding: 0;
+}
+#join-community p {
+  color: #98a6bd;
+  font-size: 16px;
+  padding: 0;
+}
+
+#subscription {
+  background: #2ab2af;
+  padding: 20px 20px 10px 20px;
+}
+#subscription h3 {
+  color: #fff;
+}
+#subscription p:first-of-type {
+  color: #e5eff5;
+}
+#subscription p {
+  font-size: 16px;
+  color: #fff;
+}
+#subscription strong {
+  font-size: 32px;
+  color: #fff;
+}
+#subscription a {
+  margin-top: 20px;
+  text-decoration: none;
+  color: #fff;
+  background: #c0df34;
+  width: 100%;
+  height: 50px;
+  display: inline-block;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 700;
+  justify-items: center;
+  line-height: 50px;
+  border-radius: 5px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+#why-us {
+  background: #3dd1cf;
+  padding: 20px 20px 10px 20px;
+}
+#why-us h4 {
+  font-weight: bold;
+  color: #fff;
+  font-size: 18px;
+}
+#why-us ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+#why-us ul li:not(:first-of-type) {
+  margin: 5px 0 5px 0;
+}
+#why-us ul li {
+  color: #e5eff5;
+  font-size: 16px;
+}
+
+/*# sourceMappingURL=styles.css.map */
