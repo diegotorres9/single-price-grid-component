@@ -2,3 +2,4 @@
 
 ![Desktop Preview](design/desktop-preview.jpg)
 
+![Mobile Preview](design/mobile-design.jpg)
