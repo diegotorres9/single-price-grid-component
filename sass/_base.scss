@@ -6,7 +6,6 @@ body {
     justify-content: center;
 }
 main {
-    // width: 800px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
@@ -17,6 +16,16 @@ main {
     box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
     border-radius: 5px;
     margin: 0 auto;
+    // width: 615px;
+}
+footer {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    p {
+        font-family: variables.$karla;
+    }
 }
 #join-community {
     display: flex;
@@ -26,19 +35,16 @@ main {
     grid-area: join;
     h1 {
         color: variables.$cyan;
-        // margin: 20px 0 10px 20px;
         padding: 0;
     }
     h2 {
         color: variables.$bright-yellow;
         font-size: variables.$body;
-        // margin: 20px 0 10px 20px;
         padding: 0;
     }
     p {
         color: variables.$grayish-blue;
         font-size: variables.$body;
-        // margin: 20px 0 20px 20px;
         padding: 0;
     }
 }
@@ -47,14 +53,12 @@ main {
     padding: 20px 20px 10px 20px;
     grid-area: subscribe;
     h3 {
-        // margin: 20px 0 10px 20px;
         color: #fff;
     }
     p:first-of-type {
         color: variables.$light-gray;
     }
     p {
-        // margin: 20px 0 10px 20px;
         font-size: variables.$body;
         color: #fff;
     }
@@ -77,6 +81,10 @@ main {
         line-height: 50px;
         border-radius: 5px;
         box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+        transition: box-shadow 0.3s ease-in-out;
+        &:hover {
+            box-shadow: none;
+        }
     }
 }
 #why-us {
